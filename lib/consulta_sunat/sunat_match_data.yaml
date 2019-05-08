@@ -1,0 +1,30 @@
+---
+:razon_social: !ruby/regexp /<input type="hidden" name="desRuc" value="(.*)">/
+:condicion: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Condici&oacute;n del Contribuyente:\s*<\/td>\n\s*<td\s*class="bg"\s*
+  colspan=[1|3]+>[\n\s]*(.*)[\n\s]*<\/td>/
+:telefono: !ruby/regexp /<td class="bgn" colspan=1>Tel&eacute;fono\(s\):<\/td>\s*-->\n<!--\s*<td\s*class="bg"
+  colspan=1>(.*)<\/td>/
+:nombre_comercial: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Nombre Comercial:\s*<\/td>\n\s*<td
+  class="bg" colspan=[1|3]>(.*)<\/td>/
+:tipo: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Tipo Contribuyente:\s*<\/td>\n\s*<td
+  class="bg" colspan=[1|3]>(.*)<\/td>/
+:fecha_inscripcion: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Fecha de Inscripci&oacute;n:\s*<\/td>\n\s*<td
+  class="bg" colspan=[1|3]>(.*)<\/td>/
+:estado: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Estado del Contribuyente:\s*<\/td>\n\s*<td
+  class="bg" colspan=[1|3]>(.*)<\/td>/
+:direccion: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Direcci&oacute;n del Domicilio
+  Fiscal:\s*<\/td>\n\s*<td class="bg" colspan=[1|3]>(.*)<\/td>/
+:sistema_emision: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Sistema de Emisi&oacute;n
+  de Comprobante:\s*<\/td>\n\s*<td class="bg" colspan=[1|3]>(.*)<\/td>/
+:actividad_exterior: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Actividad de Comercio
+  Exterior:\s*<\/td>\n\s*<td class="bg" colspan=[1|3]>(.*)<\/td>/
+:sistema_contabilidad: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Sistema de Contabilidad:\s*<\/td>\n\s*<td
+  class="bg" colspan=[1|3]>(.*)<\/td>/
+:oficio: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Profesi&oacute;n u Oficio:\s*<\/td>\n\s*<td
+  class="bg" colspan=[1|3]>(.*)<\/td>/
+:actividad_economica: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Actividad(es) Econ&oacute;mica(s):\s*<\/td>\n\s*<td
+  class="bg" colspan=[1|3]>(.*)<\/td>/
+:emision_electronica: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Emisor electr&oacute;nico
+  desde:\s*<\/td>\n\s*<td class="bg" colspan=[1|3]>(.*)<\/td>/
+:ple: !ruby/regexp /<td class="bgn"\s*colspan=1\s*>Afiliado al PLE desde:\s*<\/td>\n\s*<td
+  class="bg" colspan=[1|3]>(.*)<\/td>/
