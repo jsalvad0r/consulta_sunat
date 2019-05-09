@@ -6,11 +6,11 @@ require "consulta_sunat/version"
 Gem::Specification.new do |spec|
   spec.name          = "consulta_sunat"
   spec.version       = ConsultaSunat::VERSION
-  spec.authors       = ["Jharol Salvador Rivera"]
+  spec.authors       = ["Jharol Salvador"]
   spec.email         = ["jharol.salvador@gmail.com"]
 
   spec.summary       = %q{RubyGem para realizar consultas a Sunat Perú a traves del número de dni o ruc}
-  spec.homepage      = "https://github.com/jsalvad0r"
+  spec.homepage      = "https://github.com/jsalvad0r/consulta_sunat"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+  spec.required_ruby_version = '>= 2.3.8'
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"

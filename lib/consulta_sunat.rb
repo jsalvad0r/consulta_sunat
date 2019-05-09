@@ -17,7 +17,7 @@ module ConsultaSunat
 		dni = "10#{dni}"
 		digits = dni.split("").map(&:to_i)
 		array_mod_11 = [5,4,3,2,7,6,5,4,3,2]
-		sum_digits = digits.zip(array_mod_11).map{|i,j| i*j}.sum
+		sum_digits = digits.zip(array_mod_11).map{|i,j| i*j}.inject(0, :+)
 		mod_11 = sum_digits % 11
 		check_digit = 11 - mod_11
 

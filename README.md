@@ -2,7 +2,7 @@
 
 Consulta información Sunat por el número de DNI o RUC
 
-## Installation
+## Instalación
 
 añada la gema a su proyecto
 ```ruby
@@ -24,6 +24,7 @@ data = ConsultaSunat.by_ruc("10256324570")
 ```
 
 ## Información que devuelve
+```ruby
 {
 	:razon_social=>"Test S.A.C.", 
 	:condicion=>"HABIDO", 
@@ -40,6 +41,8 @@ data = ConsultaSunat.by_ruc("10256324570")
 	:emision_electronica=>"-", 
 	:ple=>"-"
 }
+
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
